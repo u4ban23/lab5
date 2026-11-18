@@ -196,4 +196,267 @@ int main() {
    // for (int i = 0; i < 10; i++) {
    //    cout << tab[i] << " ";
    // }
+
+   // zad 10
+   // int macierz[8][8] = {
+   //    {1,1,1,1,1,1,1,1},
+   //    {1,1,1,1,1,1,1,1},
+   //    {1,1,1,1,1,1,1,1},
+   //    {1,1,1,1,1,1,1,1},
+   //    {1,1,1,1,1,1,1,1},
+   //    {1,1,1,1,1,1,1,1},
+   //    {1,1,1,1,1,1,1,1},
+   //    {2,1,1,1,1,1,1,1},
+   // };
+   //
+   // cout<<"suma kazdego wiersza: "<<endl;
+   // for (int i = 0; i < 8; i++) {
+   //    int sum = 0;
+   //    for (int j = 0; j < 8; j++) {
+   //       sum += macierz[i][j];
+   //    }
+   //    cout<<"Dla wiersza "<<i+1<<" "<<sum<<endl;
+   // }
+   //
+   // cout<<"suma kazdej kolumny: "<<endl;
+   // for (int j = 0; j < 8; j++) {
+   //    int sum = 0;
+   //    for (int i = 0; i < 8; i++) {
+   //       sum += macierz[i][j];
+   //    }
+   //    cout<<"Dla kolumny "<<j+1<<" "<<sum<<endl;
+   // }
+   //
+   // cout<<"suma elementow macierzy: "<<endl;
+   // int sum = 0;
+   // for (int i = 0; i < 8; i++) {
+   //    for (int j = 0; j < 8; j++) {
+   //       sum += macierz[i][j];
+   //    }
+   // }
+   // cout<<"Suma: "<<sum<<endl;
+
+   //zad 11
+   // const int macierz[6][8] = {
+   //       {1,1,1,1,1,1,1,1},
+   //       {1,1,6,1,1,9,1,1},
+   //       {1,1,1,1,1,8,1,1},
+   //       {1,1,1,1,5,1,1,1},
+   //       {1,1,1,1,1,0,0,1},
+   //       {1,1,1,1,1,1,1,1}
+   //    };
+   //  int greatest= macierz[0][0];
+   //
+   //  int smallest= macierz[0][0];
+   //
+   //  for (int i = 0; i < 6; i++) {
+   //      for (int j = 0; j < 8; j++) {
+   //          int newGreatest = macierz[i][j];
+   //          int newSmallest = macierz[i][j];
+   //          if (newGreatest > greatest) {
+   //             greatest = newGreatest;
+   //          }
+   //          if (newSmallest < smallest) {
+   //             smallest = newSmallest;
+   //          }
+   //      }
+   //  }
+   //
+   //  cout << "Najwieksza: "<<greatest << endl;
+   //  cout << "Najmniejsza: "<<smallest << endl;
+   //
+   //
+   //  for (int i = 0; i < 6; i++) {
+   //      for (int j = 0; j < 8; j++) {
+   //          if (macierz[i][j] == smallest) {
+   //              cout<<"najmniejsze (x,y): "<<i<<" "<<j<<endl;
+   //          }
+   //          if (macierz[i][j] == greatest) {
+   //              cout<<"najwieksze (x,y): "<<i<<" "<<j<<endl;
+   //          }
+   //      }
+   //  }
+
+   // //zad 12
+   // int s=6;
+   // int macierz[6][6] = {
+   //    {1, 2, 3, 4, 5, 9},
+   //    {1, 2, 3, 4, 5, 6},
+   //    {1, 2, 3, 4, 5, 6},
+   //    {1, 2, 3, 4, 5, 6},
+   //    {1, 2, 3, 4, 5, 6},
+   //    {1, 2, 3, 4, 5, 6}
+   // };
+   // int sum =0;
+   // for (int i=0; i<6; i++) {
+   //    for (int j=0; j<6; j++) {
+   //       if (i+j==s-1) {
+   //          sum+=macierz[i][j];
+   //       }
+   //    }
+   // }
+   // cout<<sum;
+
+   //zad 13
+   // int macierz[5][5] = {
+   //    {1,0,0,0,0},
+   //    {0,1,0,0,0},
+   //    {0,0,1,0,0},
+   //    {0,0,0,1,0},
+   //    {0,0,0,0,1},
+   // };
+   // int errors=0;
+   // for (int i = 0; i < 5; i++) {
+   //    for (int j = 0; j < 5; j++) {
+   //       if (macierz[i][j] != macierz[j][i] && i !=j) {
+   //          errors++;
+   //       }
+   //    }
+   // }
+   // if (errors == 0) {
+   //    cout<<"macierz symetryczna";
+   // } else {
+   //    cout<<"macierz niesymetryczna";
+   // }
+
+   //zad 14
+   // float macierz[6][6] = {
+   //    {1, 2, 3, 4, 5, 9},
+   //    {1, 2, 3, 4, 5, 6},
+   //    {1, 2, 3, 4, 5, 6},
+   //    {1, 2, 3, 4, 5, 6},
+   //    {1, 2, 3, 4, 5, 6},
+   //    {1, 2, 3, 4, 5, 6}
+   // };
+   // float k = 8;
+   //
+   // for (int i = 0; i < 6; i++) {
+   //    for (int j = 0; j < 6; j++) {
+   //       macierz[i][j] *= k;
+   //    }
+   // }
+   //
+   // for (int i = 0; i < 6; i++) {
+   //    for (int j = 0; j < 6; j++) {
+   //       cout << macierz[i][j] << " ";
+   //    }
+   //    cout << endl;
+   // }
+
+   //zad 15
+   // int macierz[4][8] = {
+   //    {1,1,1,1,1,1,1,1},
+   //    {1,1,6,1,1,9,1,1},
+   //    {1,1,1,1,1,8,1,1},
+   //    {1,1,1,1,5,1,1,1},
+   // };
+   //
+   // int n;
+   // cout << "Podaj liczbe jaka mam szukac: ";
+   // cin >> n;
+   //
+   // int count = 0;
+   // for (int i = 0; i < 4; i++) {
+   //    for (int j = 0; j < 8; j++) {
+   //       if (macierz[i][j] == n) {
+   //          count++;
+   //       }
+   //    }
+   // }
+   //
+   // cout <<"ta liczba pojawila sie "<<count<<" razy"<<endl;
+   // cout <<"Pozycje tej liczby: "<<endl;
+   //
+   // for (int i = 0; i < 4; i++) {
+   //    for (int j = 0; j < 8; j++) {
+   //       if (macierz[i][j] == n) {
+   //          cout<<"x: "<<i+1<<" y: "<<j+1<<endl;
+   //       }
+   //    }
+   // }
+
+   //zad 16
+   // int macierz[5][5] ={
+   //    {1,0,0,0,0},
+   //    {0,1,0,0,0},
+   //    {0,0,1,0,0},
+   //    {0,0,0,1,0},
+   //    {0,0,0,0,1}
+   // };
+   // int errors=0;
+   // for (int i = 0; i < 5; i++) {
+   //    for (int j = 0; j < 5; j++) {
+   //       if (i==j && macierz[i][j] != 1) {
+   //          errors++;
+   //       } else if (i!=j && macierz[i][j] != 0) {
+   //          errors++;
+   //       }
+   //    }
+   // }
+   // if (errors == 0) {
+   //    cout <<"macierz jednostkowa";
+   // }
+   // else {
+   //    cout <<"macierz nie jest jednostkowa";
+   // }
+
+   // zad 17
+   int macierz[6][8] = {
+       {1,1,1,1,1,1,1,1},
+       {1,1,6,1,1,9,1,1},
+       {1,1,1,1,1,8,1,1},
+       {1,1,1,1,5,1,1,1},
+       {1,1,1,1,1,0,0,1},
+       {1,1,1,1,1,1,1,1}
+   };
+
+    int kolumny[8];
+    int wiersze[6];
+    //suma wierszy
+    cout <<"suma wierszy: "<<endl;
+    for (int i = 0; i < 6; i++) {
+        int sum = 0;
+        for (int j = 0; j < 8; j++) {
+            sum+= macierz[i][j];
+        }
+        wiersze[i] = sum;
+        cout <<i+1<<": "<<sum<<endl;
+    }
+    //suma kolumn
+    cout <<"suma kolumn: "<<endl;
+    for (int j = 0; j < 8; j++) {
+        int sum = 0;
+        for (int i = 0; i < 6; i++) {
+            sum+= macierz[i][j];
+        }
+        kolumny[j] = sum;
+        cout <<j+1<<": "<<sum<<endl;
+    }
+
+    //najwieksze
+    int gk = kolumny[0];
+    int gw = wiersze[0];
+
+    for (int i = 0; i < 6; i++) {
+        if (gk < kolumny[i]) {
+            gk = kolumny[i];
+        }
+    }
+    for (int i = 0; i < 6; i++) {
+        if (gk == kolumny[i]) {
+            cout<<"Najwieksza suma kolumn: " <<i+1<<": "<<kolumny[i]<<endl;
+        }
+    }
+    for (int i = 0; i < 8; i++) {
+        if (gw < wiersze[i]) {
+            gw = wiersze[i];
+        }
+    }
+    for (int i = 0; i < 8; i++) {
+        if (gw == wiersze[i]) {
+            cout<<"Najwieksza suma wierszy: " <<i+1<<": "<<wiersze[i]<<endl;
+        }
+    }
+
+
 }
